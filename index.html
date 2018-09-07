@@ -323,7 +323,7 @@
                 
               
 
-              <time title="Created: 2018-09-07 10:21:50 / Modified: 11:15:17" itemprop="dateCreated datePublished" datetime="2018-09-07T10:21:50+08:00">2018-09-07</time>
+              <time title="Created: 2018-09-07 10:21:50 / Modified: 11:18:33" itemprop="dateCreated datePublished" datetime="2018-09-07T10:21:50+08:00">2018-09-07</time>
             
 
             
@@ -390,10 +390,13 @@
 <h2 id="Publish-An-Article"><a href="#Publish-An-Article" class="headerlink" title="Publish An Article"></a>Publish An Article</h2><h3 id="Create-a-new-page"><a href="#Create-a-new-page" class="headerlink" title="Create a new page"></a>Create a new page</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <p>Creates a new article. If no <code>layout</code> is provided, Hexo will use the <code>default_layout</code> from <code>_config.yml</code>. If the <code>title</code> contains spaces, surround it with quotation marks.</p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate [-d]</span><br></pre></td></tr></table></figure>
-<p><code>-d</code> means it will deploy after generation finishes.</p>
+<p><code>-d</code> means it will deploy after generation finishes. </p>
 <h3 id="Deploys-the-website"><a href="#Deploys-the-website" class="headerlink" title="Deploys the website"></a>Deploys the website</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy [-g]</span><br></pre></td></tr></table></figure>
 <p><code>-g</code> means it will generate before deployment. </p>
-<p>So if you want to generate and then deploy, you can use any of the two commands.</p>
+<p>So if you want to generate and then deploy, you can use any of the two commands and their short format.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
 <h3 id="Publishes-a-draft"><a href="#Publishes-a-draft" class="headerlink" title="Publishes a draft"></a>Publishes a draft</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>TODO:</strong> not understand what publish means.</p>
 
