@@ -108,20 +108,28 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="DaDa">
-<meta property="og:url" content="https://dadamrx.github.io/index.html">
+  <meta name="description" content="Visdom is a python package for creating and organizing visualizations of live, rich data, supporting PyTorch and Numpy, developed by Facebook research team. Visdom supports many kinds of plots, includ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Visdom">
+<meta property="og:url" content="https://dadamrx.github.io/2018/09/09/visdom/index.html">
 <meta property="og:site_name" content="DaDa">
+<meta property="og:description" content="Visdom is a python package for creating and organizing visualizations of live, rich data, supporting PyTorch and Numpy, developed by Facebook research team. Visdom supports many kinds of plots, includ">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://dadamrx.github.io/2018/09/09/visdom/visdom.jpg">
+<meta property="og:image" content="https://dadamrx.github.io/2018/09/09/visdom/sin_cos.jpg">
+<meta property="og:image" content="https://dadamrx.github.io/2018/09/09/visdom/loss.png">
+<meta property="og:updated_time" content="2018-09-09T08:50:35.682Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DaDa">
+<meta name="twitter:title" content="Visdom">
+<meta name="twitter:description" content="Visdom is a python package for creating and organizing visualizations of live, rich data, supporting PyTorch and Numpy, developed by Facebook research team. Visdom supports many kinds of plots, includ">
+<meta name="twitter:image" content="https://dadamrx.github.io/2018/09/09/visdom/visdom.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="https://dadamrx.github.io/"/>
+  <link rel="canonical" href="https://dadamrx.github.io/2018/09/09/visdom/"/>
 
 
 
@@ -131,7 +139,7 @@
   };
 </script>
 
-  <title>DaDa</title>
+  <title>Visdom | DaDa</title>
   
 
 
@@ -178,8 +186,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,7 +223,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
   </li>
@@ -260,9 +267,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -294,11 +301,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/09/visdom/" itemprop="url">
-                  Visdom
-                </a>
+          <h1 class="post-title" itemprop="name headline">Visdom
               
             
           </h1>
@@ -361,9 +364,7 @@
       
 
       
-        
-          
-            <p><a href="https://github.com/facebookresearch/visdom" target="_blank" rel="noopener">Visdom</a> is a python package for creating and organizing visualizations of live, rich data, supporting PyTorch and Numpy, developed by Facebook research team.</p>
+        <p><a href="https://github.com/facebookresearch/visdom" target="_blank" rel="noopener">Visdom</a> is a python package for creating and organizing visualizations of live, rich data, supporting PyTorch and Numpy, developed by Facebook research team.</p>
 <p>Visdom supports many kinds of plots, including scatter, line, heat map, histogram, contour and so on.</p>
 <p>Visdom runs in Browser/Server mode. That means you can run the server process on your remote machine and inspect the data plot on your local PC.</p>
 <p><img src="visdom.jpg" alt="visdom"></p>
@@ -398,8 +399,6 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line">x = np.linspace(<span class="number">0.1</span>, <span class="number">5</span>, <span class="number">140</span>)</span><br><span class="line">k = <span class="number">1.5</span></span><br><span class="line">y = k * np.exp(-k * x)</span><br><span class="line">l = <span class="number">1.0</span></span><br><span class="line">z = l * np.exp(-l * x)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">140</span>):</span><br><span class="line">    plot.update(<span class="string">'train loss'</span>, x[i], y[i])</span><br><span class="line">    plot.update(<span class="string">'test loss'</span>, x[i], z[i])</span><br><span class="line">    time.sleep(<span class="number">0.05</span>)</span><br></pre></td></tr></table></figure>
 <p><img src="loss.png" width="600"></p>
 
-          
-        
       
     </div>
 
@@ -419,187 +418,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dadamrx.github.io/2018/09/07/hexo-quick-start/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DaDa">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/07/hexo-quick-start/" itemprop="url">
-                  Hexo Quick Start
-                </a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2018/09/07/hexo-quick-start/" rel="next" title="Hexo Quick Start">
+                <i class="fa fa-chevron-left"></i> Hexo Quick Start
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-09-07 10:21:50 / Modified: 11:20:31" itemprop="dateCreated datePublished" datetime="2018-09-07T10:21:50+08:00">2018-09-07</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="Part-I-Set-Up-A-Website"><a href="#Part-I-Set-Up-A-Website" class="headerlink" title="Part I. Set Up A Website"></a>Part I. Set Up A Website</h2><h3 id="1-Download-and-install"><a href="#1-Download-and-install" class="headerlink" title="1. Download and install"></a>1. Download and install</h3><p>Install Node.js and Git.</p>
-<ul>
-<li>Node.js: <a href="https://nodejs.org/" target="_blank" rel="noopener">https://nodejs.org/</a></li>
-<li>Git: <a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></li>
-</ul>
-<p>Install Hexo with npm,</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h3 id="2-Init-a-website"><a href="#2-Init-a-website" class="headerlink" title="2. Init a website"></a>2. Init a website</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure>
-<p>Initializes a website. If no <code>folder</code> is provided, Hexo will set up the website in the current directory.</p>
-<p>Then, go to the website folder and init it.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<p>After that, your project folder will look like this.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
-<h3 id="3-Files-and-folders"><a href="#3-Files-and-folders" class="headerlink" title="3. Files and folders"></a>3. Files and folders</h3><ul>
-<li><strong>_config.yml</strong>: main configuration file for the website.</li>
-<li><strong>package.json</strong>: application data, including dependencies such as Markdown render and so on.</li>
-<li><strong>scaffolds/</strong>: template folder. When you create a new post, Hexo bases the new file on the scaffold.</li>
-<li><strong>source/</strong>: put source markdown files and other resources here.</li>
-<li><strong>themes/</strong>: download new themes to here.</li>
-<li><strong>publish/</strong>: after generating, the static files will be here. They’ll be deployed to remote server.</li>
-</ul>
-<h3 id="4-Deploy-to-GitHub"><a href="#4-Deploy-to-GitHub" class="headerlink" title="4. Deploy to GitHub"></a>4. Deploy to GitHub</h3><p>Open <code>__config.yml</code> file and set deploy part to this.</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:...</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-<p>Of course, you should generate your SSH key and put the put the public key on your github account.</p>
-<h2 id="Part-II-Publish-An-Article"><a href="#Part-II-Publish-An-Article" class="headerlink" title="Part II. Publish An Article"></a>Part II. Publish An Article</h2><h3 id="1-Create-a-new-page"><a href="#1-Create-a-new-page" class="headerlink" title="1. Create a new page"></a>1. Create a new page</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<p>Creates a new article. If no <code>layout</code> is provided, Hexo will use the <code>default_layout</code> from <code>_config.yml</code>. If the <code>title</code> contains spaces, surround it with quotation marks.</p>
-<h3 id="2-Generate-static-files"><a href="#2-Generate-static-files" class="headerlink" title="2. Generate static files"></a>2. Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate [-d]</span><br></pre></td></tr></table></figure>
-<p><code>-d</code> means it will deploy after generation finishes. </p>
-<h3 id="3-Deploys-the-website"><a href="#3-Deploys-the-website" class="headerlink" title="3. Deploys the website"></a>3. Deploys the website</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy [-g]</span><br></pre></td></tr></table></figure>
-<p><code>-g</code> means it will generate before deployment. </p>
-<p>So if you want to generate and then deploy, you can use any of the two commands and their short format.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-<p>or</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-<h3 id="4-Publishes-a-draft"><a href="#4-Publishes-a-draft" class="headerlink" title="4. Publishes a draft"></a>4. Publishes a draft</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<p><strong>TODO:</strong> not understand what publish means.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -609,14 +449,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -637,8 +478,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -683,6 +533,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Concepts"><span class="nav-number">1.</span> <span class="nav-text">Concepts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Environment"><span class="nav-number">1.1.</span> <span class="nav-text">Environment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Window"><span class="nav-number">1.2.</span> <span class="nav-text">Window</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Trace"><span class="nav-number">1.3.</span> <span class="nav-text">Trace</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Setup-Server"><span class="nav-number">2.</span> <span class="nav-text">Setup Server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Client"><span class="nav-number">3.</span> <span class="nav-text">Code Client</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Instance-a-client"><span class="nav-number">3.1.</span> <span class="nav-text">Instance a client</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Draw-a-line"><span class="nav-number">3.2.</span> <span class="nav-text">Draw a line</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Append-data"><span class="nav-number">3.3.</span> <span class="nav-text">Append data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Multi-traces"><span class="nav-number">3.4.</span> <span class="nav-text">Multi traces</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Style-options"><span class="nav-number">3.5.</span> <span class="nav-text">Style options</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Visualize-loss-curve-in-ML"><span class="nav-number">3.6.</span> <span class="nav-text">Visualize loss curve in ML</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -813,6 +679,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
 
   
 
