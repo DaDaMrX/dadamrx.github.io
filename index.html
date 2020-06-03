@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>人工智能专业常见问题（FAQ）</title>
+  <style>
+    /*重置代码*/
+    body,
+    div,
+    a,
+    img,
+    p,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    input,
+    form,
+    select,
+    option,
+    textarea,
+    ul,
+    li,
+    dt,
+    dd,
+    dl,
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+      font-family: "微软雅黑";
+      font-size: 12px;
+      background: url(../images/body_bg.jpg) repeat-x top #fff;
+      color: #333;
+      line-height: 28px;
+    }
+
+    img {
+      border: 0;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #004e98;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "微软雅黑";
+    }
+
+    .warq {
+      width: 100%;
+      background: url(../images/bg.jpg) no-repeat top center;
+    }
+
+    .ser {
+      width: 180px;
+      height: 33px;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      top: 64px;
+    }
+
+
+    .content {
+      width: 1000px;
+      margin: 0 auto;
+      padding-bottom: 45px;
+      overflow: hidden;
+    }
+
+    .lf {
+      width: 480px;
+      float: left;
+      margin-right: 35px;
+      padding-top: 16px;
+      overflow: hidden;
+    }
+
+    .lf01 {
+      width: 470px;
+      height: 350px;
+      border: 5px solid #b5dbff;
+      overflow: hidden;
+    }
+
+    /*图片切换*/
+    #bannerPic {
+      position: relative;
+      width: 470px;
+      height: 350px;
+      overflow: hidden;
+    }
+
+    #banner_bg {
+      position: absolute;
+      bottom: 0;
+      background-color: #000;
+      height: 50px;
+      filter: Alpha(Opacity=70);
+      opacity: 0.7;
+      z-index: 1000;
+      cursor: pointer;
+      width: 545px;
+      background: none;
+    }
+
+    #banner_info {
+      position: absolute;
+      bottom: 30px;
+      left: 5px;
+      height: 16px;
+      color: #000;
+      z-index: 1001;
+      cursor: pointer
+    }
+
+    #banner_text {
+      position: absolute;
+      width: 120px;
+      z-index: 1002;
+      right: 3px;
+      bottom: 10px;
+    }
+
+    #bannerPic ul {
+      height: 9px;
+      position: absolute;
+      list-style-type: none;
+      z-index: 1002;
+      margin: 0;
+      padding: 0;
+      bottom: 11px;
+      right: 5px;
+    }
+
+    #bannerPic ul li {
+      height: 9px;
+      width: 9px;
+      margin-right: 12px;
+      font-size: 0px;
+      float: left;
+      background: url(../images/icon03.png) no-repeat center;
+      cursor: pointer;
+      line-height: 10px;
+      text-align: center;
+      color: #fff;
+    }
+
+    #bannerPic ul li.on {
+      background: url(../images/icon04.png) no-repeat center;
+      color: #0e75bd;
+    }
+
+    #banner_list a {
+      position: absolute;
+    }
+
+    #banner_list a span {
+      padding-left: 10px;
+      line-height: 34px;
+      color: #454545;
+    }
+
+    .lf02 {
+      width: 480px;
+      height: 41px;
+      padding: 22px 0;
+      border-bottom: 1px dashed #1155b9;
+      overflow: hidden;
+    }
+
+    .lf02 a {
+      display: block;
+      width: 110px;
+      float: left;
+      height: 41px;
+      line-height: 41px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #004e98;
+      padding-left: 50px;
+    }
+
+    .lf02 a.more01 {
+      background: url(../images/icon05.jpg) no-repeat left center;
+    }
+
+    .lf02 a.more01:hover {
+      background: url(../images/icon05h.jpg) no-repeat left center;
+    }
+
+    .lf02 a.more02 {
+      background: url(../images/icon06.jpg) no-repeat left center;
+    }
+
+    .lf02 a.more02:hover {
+      background: url(../images/icon06h.jpg) no-repeat left center;
+    }
+
+    .lf02 a.more03 {
+      background: url(../images/icon07.jpg) no-repeat left center;
+    }
+
+    .lf02 a.more03:hover {
+      background: url(../images/icon07h.jpg) no-repeat left center;
+    }
+
+    .lf03 {
+      width: 480px;
+      height: 100px;
+      overflow: hidden;
+    }
+
+    .lf03 h3 {
+      font-size: 16px;
+      color: #004e98;
+      height: 66px;
+      line-height: 66px;
+    }
+
+    .rt {
+      width: 485px;
+      float: left;
+      padding-top: 16px;
+      overflow: hidden;
+    }
+
+    .rt01 {
+      width: 485px;
+      height: 175px;
+      overflow: hidden;
+    }
+
+    .til_rt01 {
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .til_rt01 a {
+      float: right;
+      font-family: "宋体";
+      font-size: 12px;
+      color: #777;
+      font-weight: bold;
+    }
+
+    .til_rt01 a:hover {
+      color: #004e98;
+    }
+
+    .til_rt01 h3 {
+      font-size: 16px;
+      color: #004e98;
+      padding-left: 5px;
+    }
+
+    .box_rt01 {
+      clear: both;
+    }
+
+    .box_rt01 ul {
+      padding-top: 5px;
+    }
+
+    .box_rt01 ul li {
+      height: 28px;
+      line-height: 28px;
+      background: url(../images/icon01.png) no-repeat 5px center;
+      padding-left: 24px;
+    }
+
+    .box_rt01 ul li span {
+      float: right;
+      font-family: Courier, "Courier New", monospace;
+      font-size: 12px;
+      color: #777777;
+    }
+
+    .rt02 {
+      padding-top: 17px;
+      width: 485px;
+      height: 183px;
+      overflow: hidden;
+    }
+
+    .til_rt02 {
+      width: 100%;
+      height: 37px;
+    }
+
+    .til_rt02 a {
+      float: right;
+      display: block;
+      width: 359px;
+      height: 34px;
+      line-height: 34px;
+      border-top: 3px solid #b5dbff;
+      font-family: "宋体";
+      font-size: 12px;
+      color: #777;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    .til_rt02 a:hover {
+      color: #004e98;
+    }
+
+    .til_rt02 h3 {
+      width: 120px;
+      height: 34px;
+      line-height: 34px;
+      border-top: 3px solid #004e98;
+      font-size: 16px;
+      color: #004e98;
+      padding-left: 5px;
+      float: left;
+    }
+
+    .rt03 {
+      padding-top: 17px;
+      width: 485px;
+      height: 165px;
+      overflow: hidden;
+    }
+
+    .box_rt03 {
+      clear: both;
+      width: 520px;
+      overflow: hidden;
+    }
+
+    .box01_rt03 {
+      width: 230px;
+      float: left;
+      margin-right: 20px;
+      padding-top: 5px;
+    }
+
+    .box01_rt03 h4 {
+      background: url(../images/icon02.jpg) no-repeat 4px 7px;
+      padding-left: 20px;
+    }
+
+    .box01_rt03 h4 a {
+      line-height: 20px;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .box01_rt03 ul {
+      padding-left: 20px;
+      padding-top: 3px;
+    }
+
+    .box01_rt03 ul li {
+      height: 24px;
+      line-height: 24px;
+      color: #777777;
+    }
+
+    .footer {
+      height: 48px;
+      line-height: 24px;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0 38px 0;
+      background: url(../images/footer_bg.jpg) repeat-x;
+      clear: both;
+    }
+
+    /*二级页面样式*/
+    .lcon {
+      width: 1000px;
+      overflow: hidden;
+      background: url(../images/list_bg.jpg) repeat-y #fff;
+      border-top: 3px solid #004e98;
+      margin: 5px auto 0;
+      min-height: 450px;
+    }
+
+    .lf_list {
+      width: 210px;
+      float: left;
+      margin-right: 30px;
+    }
+
+    .lf_list h3 {
+      width: 180px;
+      height: 40px;
+      line-height: 40px;
+      background: #126fc7;
+      padding-left: 30px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .lf_list ul {
+      padding-top: 17px;
+      padding-bottom: 50px;
+    }
+
+    .lf_list ul li {
+      height: 38px;
+      line-height: 38px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    .lf_list ul li a {
+      display: block;
+      width: 180px;
+      height: 38px;
+      padding-left: 30px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .lf_list ul li a:hover,
+    .lf_list ul li.active a {
+      border-left: 4px solid #004e98;
+      background: #b5dbff;
+      padding-left: 26px;
+      font-weight: bold;
+      color: #004e98;
+    }
+
+    .rt_list {
+      width: 745px;
+      float: left;
+      padding-bottom: 50px;
+      overflow: hidden;
+    }
+
+    .bread {
+      height: 39px;
+      line-height: 39px;
+      border-bottom: 1px solid #e1e1e1;
+      overflow: hidden;
+      font-size: 12px;
+      color: #666;
+      padding-left: 10px;
+    }
+
+    .bread a {
+      color: #666;
+    }
+
+    .bread a:hover {
+      color: #004e98;
+    }
+
+    .box_list h3 {
+      font-size: 16px;
+      color: #004e98;
+      height: 50px;
+      line-height: 50px;
+      padding-top: 10px;
+      padding-left: 5px;
+    }
+
+    .box_list01 ul {
+      padding: 5px 5px 30px;
+    }
+
+    .page {
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 12px;
+      color: #888;
+      background: #eaf5ff;
+      clear: both;
+    }
+
+    .page a {
+      padding: 0 5px;
+      color: #444;
+    }
+
+    .page a:hover {
+      color: #004e98;
+    }
+
+
+    /*文章页*/
+    .larticle {
+      background: #fff;
+    }
+
+    .article {
+      width: 95%;
+      margin: 4px auto 0;
+      overflow: hidden;
+      padding-bottom: 40px;
+    }
+
+    .wz_art {
+      margin: 0 auto;
+      padding: 12px 8px 40px 8px;
+      overflow: hidden;
+    }
+
+    .article h4 {
+      font-size: 18px;
+      text-align: center;
+      line-height: 30px;
+      padding-top: 20px;
+      color: #004e98;
+    }
+
+    .box_list_h_article {
+      font-size: 18px;
+      text-align: center;
+      line-height: 30px;
+      padding-top: 20px;
+      color: #004e98;
+    }
+
+    .article h5 {
+      line-height: 28px;
+      font-size: 14px;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .zuozhe {
+      height: 30px;
+      line-height: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      background: #eaf5ff;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .fujian {
+      width: 100%;
+      background: #eaf5ff;
+      padding: 0 0 8px 0;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .fujian h3 {
+      padding: 0;
+    }
+
+    .fujian h3 span {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      border-top: 3px solid #004e98;
+      padding: 0 100px 0 25px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .fujian ul {
+      padding: 0px 20px 10px 25px;
+    }
+
+    .fujian ul li {
+      height: 26px;
+      line-height: 26px;
+      background: url(../images/icon02.jpg) no-repeat 3px center;
+      padding-left: 20px;
+    }
+
+    /*图片列表页*/
+    .pic_list {
+      width: 98%;
+      margin: 0 auto;
+    }
+
+    .pic_list ul {
+      width: 780px;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      *padding-bottom: 30px;
+      _padding-bottom: 5px;
+      overflow: hidden;
+    }
+
+    .pic_list ul li {
+      height: 184px;
+      width: 180px;
+      padding: 20px 20px 20px;
+      border: 1px solid #e4e4e4;
+      float: left;
+      margin-right: 32px;
+      margin-bottom: 32px;
+      line-height: 28px;
+      text-align: center;
+      background: #eaf5ff;
+    }
+
+    .pic_list ul li a {
+      font-family: "微软雅黑";
+      font-size: 12px;
+    }
+
+    .pic_list ul li a h6 {
+      font-size: 12px;
+      font-family: Courier, "Courier New", monospace;
+      color: #666;
+      font-weight: normal;
+    }
+
+    .pic_list ul li a img {
+      display: block;
+      width: 180px;
+      height: 120px;
+      margin-bottom: 13px;
+    }
+
+    /*教师列表页*/
+    .teacher {
+      padding: 10px 0 10px;
+      overflow: hidden;
+      clear: both;
+    }
+
+    .teacher h4 {
+      font-size: 15px;
+      color: #004e98;
+      background: url(../images/icon04.png) no-repeat 10px center;
+      padding-left: 30px;
+      height: 44px;
+      line-height: 44px;
+      clear: both;
+    }
+
+    .teacher ul {
+      background: #eaf5ff;
+      padding: 5px 0;
+      overflow: hidden;
+    }
+
+    .teacher ul li {
+      height: 32px;
+      width: 90px;
+      float: left;
+      line-height: 32px;
+      text-align: center;
+      background: none;
+      padding: 0;
+    }
+
+    /*教师详情页*/
+    .xq_teacher {
+      padding-top: 23px;
+      overflow: hidden;
+    }
+
+    .xq_teacher img {
+      display: block;
+      width: 148px;
+      height: 198px;
+      border: 1px solid #ddd;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .xq_teacher .wz_teacher {
+      width: 550px;
+      float: left;
+      overflow: hidden;
+    }
+
+    .wz_teacher span {
+      font-family: "微软雅黑";
+      font-weight: bold;
+      color: #666;
+    }
+
+    .con_teacher {
+      clear: both;
+      overflow: hidden;
+      border-top: 2px solid #004e98;
+    }
+
+    .con01_t {
+      padding: 10px 2px;
+      margin: 0 8px;
+      border-bottom: 1px dotted #ccc;
+    }
+
+    .con01_t h4 {
+      font-size: 15px;
+      color: #004e98;
+      background: url(../images/icon04.png) no-repeat 0px center;
+      padding-left: 20px;
+      height: 44px;
+      line-height: 44px;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p style="visibility: hidden">abc</p>
+  <div class="lcon larticle">
+    <div class="box_list article">
+      <h4>人工智能专业常见问题（FAQ）</h4>
+    </div>
+    <div class="wz_art" style="font-size:14px;">
+
+      <p><strong>Q1. 请问我们学校人工智能是新专业，目前有设置博士和硕士点的计划吗？</strong></p>
+      <p>A1: 人工智能专业是一级学科点下面的细分学科方向，一直能招收硕士和博士。</p>
+      <br>
+
+      <p><strong>Q2. 本科学习人工智能和计算机科学与技术，那么在硕士学习的时候有什么区别吗？</strong></p>
+      <p>A2:
+        计算机科学与技术是一级学科点，下面设有人工智能相关的学科方向；本科阶段学习人工智能本科专业的学生比计算机本科专业的学生在硕士和博士阶段更容易被人工智能学科方向的导师选上。这是因为在本科阶段已经有相应的专业基础了，在研究生期间也能更快的进入角色。
+      </p>
+      <br>
+
+      <p><strong>Q3: 我们学校有人工智能硕博连读名额吗</strong></p>
+      <p>A3: 只要符合学校硕博连读的条件，就可以申请，且人工智能方向的导师在计算机学院占比很高。</p>
+      <br>
+
+      <p><strong>Q4: 请问硕博连读是什么条件？</strong></p>
+      <p>A4: 符合学校硕博连读的要求即可。每年的条件略微有些变化，请参考当年的学校博士招生简章。今年的博士招生简章可以参考这个网址 <a
+          href="http://grd.bit.edu.cn/zsgz/bsyjs/gzzd/171375.htm">http://grd.bit.edu.cn/zsgz/bsyjs/gzzd/171375.htm</a>，每一年变化不大。
+      </p>
+      <br>
+
+      <p><strong>Q5: 学院与人工智能相关的学科方向有哪些？</strong></p>
+      <p>A5: 主要有两个方向：
+      <p>(1) 语言智能与社会计算：主要研究机器翻译、语义计算、自动问答、海量信息挖掘与推荐，社会媒体处理、情报处理与舆情分析、信息检索与信息抽取、知识工程、智能辅助决策等。</p>
+      <p>(2) 媒体计算与机器智能：包括图像/视频分析与理解、表示学习与深度学习、计算机视觉、计算机图形学、计算摄像学、交互媒体与数据可视化、数字表演与仿真、三维场景感知与重建、人群建模与仿真、人机交互与界面设计等。</p>
+      </p>
+      <br>
+
+      <p><strong>Q6: 人工智能专业是第一年开办，相关课程教学是不是缺乏相关经验？</strong></p>
+      <p>A6:
+        这个不用担心，人工智能专业不是凭空出现的，而是为了适应经济社会发展的新需要，整合了学院之前已有的研究方向和基础形成的，因此人工智能相关课程以前就已经开设了，只是没有单独列出成一个专业。我们学校建立计算机系是在1980年，那时就有人工智能教研室了，一批老先生们从事这个方向的研究工作，还曾经获得过国家科技进步奖。当时在国内很有声望。
+        现在的人工智能专业，我们学校是国家首批获批开设人工智能专业的学校。这个方向在我们学校具有历史传承的。目前计算机学院相当一批老师都在从事自然语言处理、机器学习、计算机视觉等人工智能领域的研究。</p>
+      <br>
+
+      <p><strong>Q7: 人工智能专业毕业后具体从事什么工作?</strong></p>
+      <p>Q7:
+        想必大家都已经听说过搜索引擎、知识图谱、语音识别、自动驾驶、视频监控、智能交互、机器学习、深度学习等很多关键字，宽泛地讲，经济社会所需的智能和自动化场景均有我们人工智能的用武之地；具体地讲，毕业生可以去现在大家熟知的google、百度、头条、抖音、腾讯、微信、IBM、微软等等互联网公司工作，也可以去传统行业的企业，例如房企和制造业企业，当然也可以创业，可以说就业方向十分广泛。
+      </p>
+
+    </div>
+
+  </div>
+
+  </div>
+</body>
+
+</html>
